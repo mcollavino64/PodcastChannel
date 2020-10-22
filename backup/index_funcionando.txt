@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio Web</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+        <header>
+                <div class="header_menu">
+                    
+                    <div class="logo">
+                        <a href="index.html" id="logo">
+                            <img src="./images/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="nav">
+                        <nav>
+                            <a href="#" id="menu-icon">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                            
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="activa"> EPISODIOS</a>
+                                </li>
+                                <li>
+                                    <a href="#">NOSOTROS</a>
+                                </li>
+                                <li>
+                                    <a href="#">ENTREVISTAS</a>
+                                </li>
+                                <li>
+                                    <a href="#">TÓPICOS</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+        </header>
+
+        <section>
+            <div class="contenedor_title">
+                <div class="titulo">
+                    <h1 class="header_title">Hello world pale blue dot.</h1>   
+                </div>
+
+                <div class="subtitulo">
+                    <h2 class="header_subtitle">El portal de podcasts que explota el mundo de la programacion y
+                    la tecnologia. Nuevos episodios, todos los jueves cada 15 días. </h2>
+                </div>
+
+                <div class="contenedor_conoce_mas">
+                        <h3>CONOCE MÁS</h3>                    
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class=contenedor_episodios>
+                <div class="cuadro">
+                    <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media" ></iframe>
+                </div>
+                <div class="cuadro">
+                    <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="cuadro">
+                    <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="cuadro">
+                    <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </section>
+
+
+</body>
+</html>

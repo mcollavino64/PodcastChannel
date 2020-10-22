@@ -1,0 +1,450 @@
+*{
+    margin: 0px;   
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*******LINEA OBLICUA MENU*******/
+/**header{
+    position: absolute;
+    background-color: rosybrown;
+}
+svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+    /* set height to pixels if you want angle to change with screen width */
+/*
+
+
+/**************/
+/*****NAV******/
+/**************/
+
+.header_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+.logo{
+    margin-left: 16px;
+}
+
+#logo img{
+    width: 24px;
+    height: 24px;
+}
+
+#menu-icon{
+    display: block;
+}
+
+/*NAV */
+
+.off{  
+    display: none; /*No mostrar iconos de cada item de la lista*/
+}
+
+nav:hover ul{
+    display: block;
+}
+
+nav ul, nav:active ul{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    background: #f5f5f5;
+    right: 20px;
+    opacity: .95; /*LE DA TRANSPARENCIA*/
+    transition: all 500ms ease;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+
+/****************/
+/****Titulos*****/
+/****************/
+
+
+.contenedor_title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.titulo{
+    margin-top: 29px;
+}
+
+.subtitulo{
+    margin-top: 16px;
+}
+
+.contenedor_conoce_mas{
+    margin-top: 36px;
+    background-color: #00F3BB ;
+    width: 288px;
+    height: 48px;
+    padding-top: 13px;
+    align-items: center;
+}
+
+.contenedor_conoce_mas h3{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
+.titulo h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.subtitulo h2{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+/****************************/
+/****IFRAMES EPISODIOS*******/
+/****************************/
+
+.contenedor_episodios{
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: blue;
+}
+
+.titulo_episodios{
+    position: absolute;
+    margin-left: 10px;
+}
+.titulo_episodios h1{
+    font-family:  'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.cuadro_iframe{
+    margin-top: 50px;
+    background: blue;
+    width: 298px;
+    height: 255px;
+}
+
+/***************************/
+/*****THE SECRET HISTORY****/
+/**************************/
+
+.contenedor_secret_history{
+    margin-top: 64px;
+    padding-left: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.foto_secret img{
+    width: 360px;
+    height: 519px;
+}
+
+.de_donde_venimos{
+    margin-top: 27px;
+    justify-content: center;
+}
+
+.de_donde_venimos h1{
+    width: 288px;
+    height: 84px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.de_donde_venimos h2{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+/******************************/
+/******INVITADOS ESTELARES*****/
+/******************************/
+
+.contenedor_invitados_estelares{
+    display: flex;
+    flex-direction: column;
+    line-height:0; /*Eliminar interlineado entre las imagenes*/
+}
+
+.titulo_invitados{
+    margin-top: 54px;
+    /*width: 288px;
+    height: 84px;*/
+}
+
+.titulo_invitados h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.invitados img{
+    width: 320px;
+    height: 243px;
+}   
+
+
+/************************************/
+/*****ALGUNO DE NUESTROS TEMAS******/
+/***********************************/
+.titulo_algunos_temas{
+    text-align: left;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.titulo_algunos_temas h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.contenedor_algunos_temas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/**********************************************/
+/***************RESPONSIVE********************/
+/*******************************************/
+
+@media screen and (min-width: 520px){
+    #menu-icon{
+        display: none;
+    }
+
+    .titulo h1{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 64px;
+        color: #060A24;
+        letter-spacing: 0;
+    }
+    .subtitulo{
+        width: 628px;
+        height: 42px;
+    }
+
+    .subtitulo h2{
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+    }
+    
+    /****************************/
+     /*********NAV**************+*/
+     /****************************/
+
+
+    .nav{
+        display: flex;
+        justify-content: right;
+    }
+
+    nav ul{
+        display: inline-block;
+        justify-content: space-between;
+        height: 0px;
+        position: relative;
+        /*align-items: center;*/  
+        margin-bottom: 35px;
+        /*background: sandybrown;*/
+    }
+
+
+    nav ul li {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+        display: inline-block; 
+        padding-right: 16px;
+        
+        /*padding-left: 166px;
+        background: rosybrown; */
+    }
+
+    /****************************/
+    /****IFRAMES EPISODIOS*******/
+    /****************************/
+
+    .contenedor_title{
+        align-items: center;
+    }
+
+    .cuadro_iframe{
+        width: 584px;
+        height: 232px;
+    }
+    .contenedor_title .subtitulo{
+        align-self: flex-start;
+    }
+    .contenedor_title .contenedor_conoce_mas{
+        align-self: flex-start;
+    }
+
+    .contenedor_episodios{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /***************************/
+    /*****THE SECRET HISTORY****/
+    /**************************/
+    .foto_secret img{
+        width: 457.6px;
+        height: 660px;
+    }
+
+    .contenedor_secret_history h1{
+        width: 399px;
+        height: 62px;
+        font-size: 48px;
+    }
+
+    .de_donde_venimos{
+        width: 464px;
+        height: 100%;
+        font-size: 16px;
+        align-self: center;
+    }
+    /***************************/
+    /****INVITADOS ESTELARES****/
+    /***************************/
+    .contenedor_invitados_estelares{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        line-height:0; /*Eliminar interlineado entre las imagenes*/
+    }
+
+    .invitados img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .titulo_invitados{
+        text-align: center;
+        /*******/
+    }
+
+    .titulo_invitados h1{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    /************************************/
+    /*****ALGUNO DE NUESTROS TEMAS******/
+    /***********************************/
+
+    .titulo_algunos_temas{
+        margin: 48px;
+    }
+
+    .contenedor_algunos_temas{
+        margin-top: 37px;
+        display: grid;
+        /*grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr;*/
+        grid-template-columns: [x0] 25% [x1] 25% [x2] 25% [x3] 25%;
+        grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr;
+    }
+
+    /*alinear iconos*/
+    .contenedor_algunos_temas .tema{
+       
+    }
+
+
+    /*UBICAR LOS ICONOS EN FILAS Y COLUMNAS CORRESPONDDIENTES*/
+    /*ICONO 1*/
+    .temas1{
+        grid-row: y0/y1;
+        grid-column: x0/x1;
+    }
+    /*ICONO 2*/
+    .temas3{
+        grid-row: y0/y1;
+        grid-column: x1/x2;
+    }
+    /* ICONO 3*/
+    .temas5{
+        grid-row: y0/y1;
+        grid-column: x2/x3;
+    }
+    /* ICONO 4*/
+    .temas7{
+        grid-row: y0/y1;
+        grid-column: x3/x4;
+    }
+
+
+
+} /***FIN  DE RESPONSIVE 520PX***/
+
+
+@media screen and (min-width: 750px){
+    .contenedor_title .titulo{
+        align-self: flex-start;
+    }
+            
+    li{
+        margin-left: 48px;
+    }
+
+   /* .off{
+        display:initial; /*mostrar ek icono al lado del item
+    } 
+    */
+}
