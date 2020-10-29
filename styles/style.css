@@ -7,73 +7,92 @@ a{
     text-decoration: none;
 }
 
-
-/*******LINEA OBLICUA MENU ****NO FUNCIONA***/
-/**header{
-    position: absolute;
-    background-color: rosybrown;
+iframe{
+    border:0;
 }
-svg {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10vw;
-    /* set height to pixels if you want angle to change with screen width */
-/*
-
-
 /**************/
 /*****NAV******/
 /**************/
 
-.header_menu{
+header {
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
     display: flex;
+    display: -ms-flexbox; 
+    display: -webkit-flex; 
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
-    margin-right: 16px;
+    width: 100vw;
+    padding: 0.75em;
+    background-color: #FFFFFF; 
+    z-index: 100;
 }
-
-.logo{
-    margin-left: 16px;
-}
-
-#logo img{
-    width: 24px;
-    height: 24px;
-}
-
-#menu-icon{
-    display: block;
-}
-
-/*NAV */
-
-.off{  
-    display: none; /*No mostrar iconos de cada item de la lista*/
-}
-
-nav:hover ul{
-    display: block;
-}
-
-nav ul, nav:active ul{
+        
+nav input 
+{
     display: none;
-    z-index: 1000;
+    font-size: 1.125em;
+    margin-right: 1em;
+}
+nav .open {
+    display: block;
+}
+    
+nav .close {
+    display: none;
+}
+    
+nav input:checked ~ .open {
+    display: none;
+}
+
+nav input:checked ~ .close {
+    display: block;
+}
+
+nav input:checked ~ ul {
+    display: block;
+}
+
+nav ul 
+{
+    display: none;
     position: absolute;
-    padding: 20px;
-    background: #f5f5f5;
-    right: 20px;
-    opacity: .95; /*LE DA TRANSPARENCIA*/
-    transition: all 500ms ease;
+    right: 0%;
+    top: 8vh;
+    width: 100vw;
+    padding: 0.5em;
+    height: 30vh;
+    background-color:  #0000EC; 
+    opacity: 0.9; /*Dar transparencia*/
 }
-
-ul li{
+nav ul li 
+{
     list-style: none;
+    line-height: 6vh;
+    padding: 0.1em 0;
+}
+nav ul li a {
+    font-family: 'IBMPlexMono', Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0;
+    color: #FFFFFF; 
+    text-decoration: none;
 }
 
+nav ul li a:active {
+    text-decoration: line-through;
+    color: #060a248c;
+}
 
+.m_fa{
+    padding-right: 1.5em;
+}
 
+.x{
+    padding-right: 1.5em;
+}
 /****************/
 /****Titulos*****/
 /****************/
@@ -82,98 +101,120 @@ ul li{
 .contenedor_title{
     display: flex;
     flex-direction: column;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .titulo{
-    margin-top: 29px;
+    margin-top: 1.8125em;
+}
+
+.titulo h1 span{
+    text-decoration: line-through;
 }
 
 .subtitulo{
-    margin-top: 16px;
+    margin-top: 1em;
 }
 
 .contenedor_conoce_mas{
-    margin-top: 36px;
+    margin-top: 2.25em;
     background-color: #00F3BB ;
-    width: 288px;
-    height: 48px;
-    padding-top: 13px;
+    width: 18em;
+    height:3em;
+    padding-top: 1em;
     align-items: center;
+    margin-bottom: 1.5em;
 }
 
 .contenedor_conoce_mas h3{
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px;
+    font-size: 1em;
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
     line-height: 22px;
 }
 
+
+.contenedor_conoce_mas h3:hover{
+    color: white;
+}
 .titulo h1{
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 36px;
+    font-size: 2.25em;
     color: #060A24;
     letter-spacing: 0;
-    line-height: 42px;
+    
 }
 
 .subtitulo h2{
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 14px;
+    font-size: 0.875em;
     color: #060A24;
     letter-spacing: 0;
-    line-height: 22px;
+    line-height: 1.375em;
 }
 
 /****************************/
 /****IFRAMES EPISODIOS*******/
 /****************************/
 
+
+.contenedor_general_episodios{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skew(0deg,-8deg);
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_episodios{
+    margin-top: 4em;
+    padding: 1em;
+    margin-left: 1em;
+}
+
+.contenedor_general_episodios h1{
+    transform: skew(0deg,8deg);
+}
+
 .contenedor_episodios{
-    margin-top: 24px;
+    margin-top: 1.5em;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: blue;
+    transform: skew(0deg,8deg);
 }
 
-.titulo_episodios{
-    position: absolute;
-    margin-left: 10px;
-}
 .titulo_episodios h1{
     font-family:  'IBM Plex Sans', sans-serif;
-    font-size: 36px;
+    font-size: 2.25em;
     color: #FFFFFF;
     letter-spacing: 0;
-    line-height: 42px;
+    line-height: 2.625em;
 }
 
-.cuadro_iframe{
-    margin-top: 50px;
-    background: blue;
-    width: 298px;
-    height: 255px;
-}
 
 /***************************/
 /*****THE SECRET HISTORY****/
 /**************************/
 
 .contenedor_secret_history{
-    margin-top: 64px;
-    padding-left: 16px;
+    margin-top: 4em;
+    padding-left: 1em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+.foto_secret{
+    z-index: 99;
+    transform:translateY(-14vh)
+}
+
 .foto_secret img{
-    width: 360px;
+    /*width: 360px;*/
     height: 519px;
 }
 
@@ -212,8 +253,6 @@ ul li{
 
 .titulo_invitados{
     margin-top: 54px;
-    /*width: 288px;
-    height: 84px;*/
 }
 
 .titulo_invitados h1{
@@ -234,6 +273,7 @@ ul li{
 /*****ALGUNO DE NUESTROS TEMAS******/
 /***********************************/
 .titulo_algunos_temas{
+    margin-top: 48px;
     text-align: left;
     margin-left: 16px;
     margin-right: 16px;
@@ -253,12 +293,96 @@ ul li{
     align-items: center;
 }
 
+.tema h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;   
+}
+
+.tema{
+    margin-top: 49px;
+}
+
+/**********************************************/
+/***************ULTIMAS NOVEDADES************/
+/*******************************************/
+
+.novedades 
+{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    -moz-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    -ms-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    -o-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    height: 62vh;
+    width: 100vw; 
+}
+.novedades .title_novedades 
+{
+    padding: 0.75em; 
+}
+.novedades .title_novedades h2 
+{
+    line-height: 7vh;
+    text-align: center;
+    color: #FFFFFF; 
+}
+.novedades .mas_episodios 
+{
+    height: 8vh;
+    width: 90vw;
+    background-color: #00F3BB;
+    font-family:  'IBM Plex Mono', monospace;
+    font-size: 1em;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 8vh;
+    border: none; 
+}
+
+footer 
+{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh; 
+}
+footer .redes_sociales 
+{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-around;
+    width: 80vw; 
+}
+footer .redes_sociales .fab 
+{
+    color: #060A24; 
+}
+
+footer .fab:hover 
+{
+    color: #00F3BB; 
+} 
 
 /**********************************************/
 /***************RESPONSIVE********************/
 /*******************************************/
 
-@media screen and (min-width: 520px){
+@media screen and (min-width: 768px){
     #menu-icon{
         display: none;
     }
@@ -280,67 +404,96 @@ ul li{
         letter-spacing: 0;
         line-height: 24px;
     }
-    
-    /****************************/
-     /*********NAV**************+*/
-     /****************************/
-
-
-    .nav{
-        display: flex;
-        justify-content: right;
-    }
-
-    nav ul{
-        display: inline-block;
-        justify-content: space-between;
-        height: 0px;
-        position: relative;
-        /*align-items: center;*/  
-        margin-bottom: 35px;
-        /*background: sandybrown;*/
-    }
-
-
-    nav ul li {
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 16px;
-        color: #060A24;
-        letter-spacing: 0;
-        line-height: 28px;
-        display: inline-block; 
-        padding-right: 16px;
-        
-        /*padding-left: 166px;
-        background: rosybrown; */
-    }
-
-    /****************************/
-    /****IFRAMES EPISODIOS*******/
-    /****************************/
 
     .contenedor_title{
+        margin-top: 120px;
         align-items: center;
     }
 
-    .cuadro_iframe{
-        width: 584px;
-        height: 232px;
-    }
     .contenedor_title .subtitulo{
         align-self: flex-start;
     }
     .contenedor_title .contenedor_conoce_mas{
         align-self: flex-start;
     }
-
-    .contenedor_episodios{
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    
+    /****************************/
+     /*********NAV**************+*/
+     /****************************/
+     header {
+        position: fixed;
+        height: 12vh;
+        top: 0;
+        background-color: #FFFFFF; 
+     }
+    .logo {
+        margin-left: 5em;
+    }
+    .logo .img_logo 
+    {
+        width: 3vw;
     }
 
+    nav .m_fa, .x {
+        display: none;
+    }
+
+    nav ul {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        width: auto;
+        height: auto;
+        padding: 0;
+        background: none;
+        margin-right: 1.5em;
+    }
+    nav ul li {
+        display: inline-block;
+        padding: 0 1em;
+    }
+    nav ul li a {
+        color:  #060A24;
+        font-size: 0.9em;
+    }
+
+    nav ul li a:hover {
+        text-decoration: line-through;
+        color:  #00F3BB; 
+    }
+
+    nav ul li a:active {
+        text-decoration: line-through;
+        color: #060a248c;
+    }
+
+    /****************************/
+    /****IFRAMES EPISODIOS*******/
+    /****************************/
+
+    .contenedor_general_episodios{
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor_general_episodios .titulo_episodios{
+        margin-top: 12vh;
+    }
+
+    .contenedor_episodios{
+        display: grid;
+        display: -ms-grid;
+        grid-template: repeat(2,1fr) / repeat(2,1fr);
+        justify-content: center;
+        grid-gap: 3.5em 3.5em;
+        align-self: center;
+        padding-left: 2em;
+    }
+
+    iframe{
+        width: 40vw;
+    }
     /***************************/
     /*****THE SECRET HISTORY****/
     /**************************/
@@ -360,6 +513,7 @@ ul li{
         height: 100%;
         font-size: 16px;
         align-self: center;
+        padding-bottom: 12.5em;
     }
     /***************************/
     /****INVITADOS ESTELARES****/
@@ -402,8 +556,8 @@ ul li{
     }
 
     /*alinear iconos*/
-    .contenedor_algunos_temas .tema{
-       
+    .contenedor_algunos_temas{
+        justify-items: center;
     }
 
 
@@ -429,7 +583,56 @@ ul li{
         grid-column: x3/x4;
     }
 
+    /*********************************/
+    /*******ULTIMAS NOVEDADES********/
+    /*********************************/
 
+
+    .novedades 
+    {
+    justify-content: center;
+    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+    -moz-clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+    -ms-clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+    -o-clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%); 
+    }
+    .novedades .title_novedades 
+    {
+        padding: 2em; 
+    }
+    .novedades .mas_episodios 
+    {
+        width: 35vw;
+        font-size: 1em; 
+    }
+    main .novedades .mas_episodios:hover 
+    {
+        background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); 
+    }
+    .novedades .mas_episodios:hover a 
+    {
+        color: #FFFFFF; 
+    }
+    
+    footer 
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        padding: 0 3em; 
+    }
+    footer .redes_sociales 
+    {
+        justify-content: space-evenly;
+        width: 30vw;
+     }
+    
+     footer .fab:hover 
+    {
+        color: #00F3BB; 
+    } 
 
 } /***FIN  DE RESPONSIVE 520PX***/
 
